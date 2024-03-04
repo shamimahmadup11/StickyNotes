@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: auto;
+   
+}
+.first{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(196, 196, 161);
+}
+
+.inputfield{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+}
+.textField{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    margin: 200px 70px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.colors{
+    margin-top: 300px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+#btn{
+    height: 50px;
+    width: 150px;
+    margin-left: 80px;
+    border-radius: 20px;
+    
+   cursor: pointer;
+   font-size: 18px;
+   border: none;
+   background: linear-gradient(to right , rgb(216, 135, 211),rgb(220, 72, 72));
+}
+.second{
+    width: 50%;
+
+}
+.second h1{
+    margin-top:30px;
+    text-align: center;
+}
+.AddNoteHere{
+    margin: 50px;
+    width: 700px;
+    display: flex;
+      flex-wrap: wrap;
+    gap: 20px;
+}
