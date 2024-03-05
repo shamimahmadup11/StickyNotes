@@ -8,8 +8,10 @@ btn.addEventListener("click",function(){
     const vlaueOfTextArea=textarea.value;
     const color=colors.value;
 if(!vlaueOfTextArea){
-    alert("please write some contentd")
+    alert("must write something!")
 }else{
+    
+
     var newDiv=document.createElement("div");
     newDiv.style.height="200px"
     newDiv.style.width="200px"
@@ -22,8 +24,27 @@ if(!vlaueOfTextArea){
     newDiv.appendChild(newPara);
     newDiv.style.backgroundColor=color;
     newPara.textContent=vlaueOfTextArea;
-    var Canclebtn=document.createElement("button")
-    newDiv.appendChild(Canclebtn);
-    Canclebtn.textContent="cut"
+    var span=document.createElement("span");
+    span.className ="spanTag"
+    span.textContent="\u00d7";
+    newDiv.appendChild(span)
+   
 }  
+textarea.value="";
+
 })
+
+AddNoteHere.addEventListener("click", function(e) {
+    if(e.target.tagName==="SPAN"){
+       e.target.parentElement.remove();
+    }
+  
+});
+
+function saveData(){
+    localStorage.setItem("data", AddNoteHere.innerHTML)
+}
+function showTask(){
+    AddNoteHere.innerHTML=localStorage.getItem("data")
+}
+showTask();

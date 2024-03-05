@@ -40,9 +40,9 @@
 #btn{
     height: 50px;
     width: 150px;
+    margin-bottom: 100px;
     margin-left: 80px;
     border-radius: 20px;
-    
    cursor: pointer;
    font-size: 18px;
    border: none;
@@ -63,3 +63,41 @@
       flex-wrap: wrap;
     gap: 20px;
 }
+ /* div > span{
+    color: red;
+  margin-left: 120px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: antiquewhite;
+  border-radius: 80%;
+
+}   */
+
+.AddNoteHere div{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(103, 98, 98);
+}
+.spanTag{
+  color: rgb(228, 187, 187);
+  top: 5px;
+  margin-left: 160px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  /* background-color: antiquewhite; */
+  border-radius: 50%;
+  /* position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  background-color: beige;
+    color: #d4cccc;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1; */
+
+}  
